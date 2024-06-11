@@ -20,49 +20,6 @@ const ContactForm = () => {
         setInputs((prevInputs) => ({ ...prevInputs, [name]: value }));
     };
 
-    // const handleSubmit = (e) => {
-    //     e.preventDefault
-    //     setIsSubmitted(true);
-    //     console.log(inputs);
-    //     sendEmail();
-    //     setInputs({ firstName: '', lastName: '', message: '' });
-    //     setValidationError('');
-    // };
-
-    // const sendEmail = (e) => {
-    //     // e.preventDefault();
-
-    //     emailjs
-    //         .sendForm(
-    //             'service_4yu24wb',
-    //             'contact_form',
-    //             e.target,
-    //             'arI1lbCnWE-Tlm6HA',
-    //         )
-    //         .then(
-    //             (result) => {
-    //                 console.log(result.text);
-    //             },
-    //             (error) => {
-    //                 console.log(error.text);
-    //             },
-    //         );
-    //         setIsSubmitted(true);
-    //         console.log(inputs);
-    //         sendEmail();
-    //         setInputs({ firstName: '', lastName: '', message: '' });
-    //         setValidationError('');
-    // };
-
-    // const handleSubmit = (e) => {
-    //     e.preventDefault();
-    
-    //     setIsSubmitted(true);
-    //     console.log(inputs);
-    //     sendEmail(); // Call sendEmail after preventing default behavior
-    //     setInputs({ firstName: '', lastName: '', message: '' });
-    //     setValidationError('');
-    // };
     
     const sendEmail = (e) => {
         e.preventDefault();
