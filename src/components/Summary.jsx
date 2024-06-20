@@ -1,6 +1,9 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 const Summary = () => {
     return (
-        <div>
+        <div className="summary-div" id="Summary">
+            <h1 className="header-text">Ashley McKellar</h1>
+            <h2>Software developer</h2>
             <p>
                 In my technical and customer support career, I've honed my
                 skills in handling diverse clients and complex technical
@@ -17,5 +20,4 @@ const Summary = () => {
     );
 };
 
-
-export default Summary
+export default Summary;

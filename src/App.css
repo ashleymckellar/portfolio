@@ -1,14 +1,72 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  color: #888;
+  font-family: "Lato", sans-serif;
+  font-size: 16pt;
+  font-weight: 400;
+  
+}
+
+/* h3 {
+  font-size: 1.75em;
+} */
+.App {
+  display: flex;
+  height: 100vh;
+  
 }
 
 .features {
   display: flex;
   flex-direction: column;
+  padding-left: 200px;
+  padding-right: 200px;
+  justify-content: start;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
 
+
+
+h3 {
+  font-size: 1.5em;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2rems;
+  padding-bottom: 1rem; /* Space between content and the border */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+article:not(:last-child) {
+  margin-bottom: 2rem; /* Space between articles, excluding the last one */
+}
+
+article .image {
+  flex: 0 0 auto;
+  margin-right: 5rem; /* Space between image and text */
+}
+
+article:last-child {
+  border-bottom: none;
+  margin-bottom: 0; /* Remove the margin from the last article if needed */
+}
+
+article .image img {
+  width: 450px; /* Set a fixed width for the images */
+  height: auto; 
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+article .inner {
+  flex: 1; 
+}
+
+article .inner h4 {
+  margin: 0 0 0.5rem 0; 
 }
 
 .image {
@@ -19,6 +77,300 @@
   height: 20em;
 }
 
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 400px; 
+  
+}
+
+
+.header {
+  width: 93.5%;
+  display: flex;
+  height: 430px;
+}
+
+header br {
+  display: none;
+}
+
+header.major h2 {
+  font-size: 2.5em;
+}
+
+  header.major h2 + p {
+    font-size: 1.5em;
+  }
+
+.header-img {
+  width: 100%;
+  object-fit: cover; /* Ensures the image covers the entire area */
+}
+
+.summary-div {
+  display: flex;
+  flex-direction: column;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+
+}
+
+.contact-div-parent {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.contact-div {
+  
+  max-width: 800px;
+  padding-left: 200px; 
+  padding-right: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  
+}
+
+.form-div {
+  
+  margin-top: 20px;
+  
+}
+
+/* form {
+  display: flex;
+  flex-direction: column;
+  
+} */
+
+/* .form-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+} */
+
+.form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-bottom: 10px;
+}
+
+.form-full-width {
+  margin-top: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+button.btn {
+  margin-top: 10px;
+  width: 20%; 
+  border: none;
+  background-color: #4acaa8;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  align-item: center;
+}
+
+button.btn:disabled {
+  background-color: #ccc;
+}
+
+button.btn:hover:not(:disabled) {
+  background-color: #3aa890;
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+}
+
+.validation-error {
+  text-align: center;
+  color: red;
+  font-size: 1rem;
+  
+  
+  .required-field {
+    /* color: red; */
+    /* margin-left: 160px; */
+    text-align: left;
+    font-size: 0.75rem;
+
+}: 1rem
+}
+
+.custom-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.custom-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-btn {
+  width: 30%;
+  height: 3rem;
+  flex-shrink: 0;
+  border-radius:  5px;
+  background: #4acaa8;
+
+  font-family: "Lato", sans-serif;
+  margin: 20px;
+  border: none;
+  margin: 0 auto;
+  color: white;
+}
+
+.modal-h2 {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: #56575C;
+}
+
+.modal-p {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: #56575C;
+  font-size: 20px;
+  padding: 20px;
+}
+
+
+.modal-div {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.sidebar {
+  
+  padding: 3rem;
+  
+  
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  background: #4acaa8;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 400px; 
+ 
+  
+}
+
+.header-text {
+  color: #4acaa8;
+}
+
+.sidebar-text {
+  color: white;
+  font-size: 1.75em;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.sidebar-text-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-ul {
+  list-style-type: none;
+  padding-top: 5em;
+ 
+}
+
+.nav-link {
+  text-align: center;
+  padding: .5em;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.nav-link.clicked-link {
+  background-color: white;
+}
+
+.link-div.clicked-link {
+  background-color: white;
+}
+/* .sidebar-li {
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  padding-top: .5em;
+  padding-bottom: .5em;
+} */
+
+.social-icons-div {
+  display: flex;
+  justify-content: space-around;
+  height: 46vh;
+  align-items: flex-end;
+  
+}
+
+.social-icons {
+  height: 35px;
+  width: auto;
+}
+
+.emailIcon {
+  height: 40px;
+  width: auto;
+}
+.image-avatar {
+  display: flex;
+  justify-content: center; 
+  width: 100%; /* Ensure the container takes full width of sidebar */
+}
+
+.image-avatar img{
+  
+  border-radius: 100%;
+  justify-content: center;
+    width: 50%;
+    /* align-items: center; */
+}
+
+
+
+
 /* .image.main {
   display: block;
   height: 20em;
@@ -28,5 +380,31 @@
 .image.main img {
   border-radius: 0;
 } */
+
+
+.inner {
+  margin-bottom: 50px;
+}
+
+
+.features {
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+/* .footer {
+  max-width: 800px;
+  padding-left: 200px; 
+  padding-right: 200px;
+  padding-top: 100px;
+} */
+
+.footer {
+  padding-left: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 
 

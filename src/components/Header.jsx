@@ -1,19 +1,14 @@
 // import "./App.css"
-import skyline from '../assets/skyline.jpeg'
-import newHeadshot from '../assets/2023Headshot.png'
+import skyline from '../assets/skyline.jpeg';
 
-
- const Header = () => {
+const Header = () => {
     return (
         <div>
-            <span className="image avatar"><img src={newHeadshot} alt="" /></span>
-            <img src={skyline} alt="" />
-		<h1>Ashley McKellar</h1>
-		
-		
-		</div>
-	
-    )
-}
+            <header className="header">
+                <img className="header-img" src={skyline} alt="" />
+            </header>
+        </div>
+    );
+};
 
-export default Header
+export default Header;

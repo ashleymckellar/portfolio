@@ -5,7 +5,8 @@ import HotSauce from '../assets/HotSauceWorld.png'
 
 const Projects = () => {
     return (
-        <div className="features">
+        <div className="features" id="Projects">
+            <h3 className='feature-headline'>A Few Accomplishments</h3>
             <article>
                 <a href="https://sidhu-farms1.vercel.app/" className="image">
                     <img src={SidhuFarmsimg} alt="" />
